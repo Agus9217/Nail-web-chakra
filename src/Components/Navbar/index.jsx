@@ -1,7 +1,6 @@
 import { Box, Container, Flex, IconButton, Image, Link, Menu, MenuButton, Stack } from '@chakra-ui/react'
 import logoImg from '../../assets/img/nails-logo.jpg'
-import { BsFillCartFill, BsInstagram, BsSearch, BsWhatsapp } from 'react-icons/bs'
-import React from 'react'
+import { BsFillCartFill, BsInstagram, BsWhatsapp } from 'react-icons/bs'
 import { HamburgerIcon } from '@chakra-ui/icons'
 
 export const Navbar = () => {
