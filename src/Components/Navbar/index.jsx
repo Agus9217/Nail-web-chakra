@@ -42,9 +42,10 @@ export const Navbar = () => {
           <Flex
             alignItems={'center'}
             justifyContent={'center'}
+            maxW={'60px'}
           >
             <Image 
-              boxSize={'60px'}
+              boxSize={'100%'}
               borderRadius={'full'}
               objectFit={'cover'}
               src={ logoImg }
