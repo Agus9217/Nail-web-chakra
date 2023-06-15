@@ -10,10 +10,12 @@ export const Navbar = () => {
       alignItems={'center'}
       as='header'
       display={'flex'}
+      backdropFilter={'blur(8px)'}
       justifyContent={'center'}
       minH={'60px'}
-      position={'fixed'}
-      pt={1}
+      position={'sticky'}
+      py={1}
+      top={'0'}
       w={'100%'}
       zIndex={100}
     >
