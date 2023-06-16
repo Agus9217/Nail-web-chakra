@@ -1,4 +1,4 @@
-import { Box, Flex, Heading, Image, Text } from '@chakra-ui/react'
+import { Box, Button, Flex, Heading, Image, Text, Wrap, WrapItem } from '@chakra-ui/react'
 import heroImg from '../../assets/img/hero-img.jpeg'
 import { FiCornerRightDown } from 'react-icons/fi'
 
@@ -32,12 +32,32 @@ export const Hero = () => {
             alignItems={ 'center' }
             display={ 'flex' }
             fontSize={ 'clamp(1.2rem, 2vw, 2rem)' }
-            fontWeight={ 'light' }
+            fontWeight={ 'thin' }
             gap={ 2 }
             textAlign={ 'center' }
           >
             Mira nuestro catálogo <FiCornerRightDown />
           </Text>
+          <Wrap spacing={2}>
+            <WrapItem>
+              <Button>Uñas</Button>
+            </WrapItem>
+            <WrapItem>
+              <Button>Peluqueria</Button>
+            </WrapItem>
+            <WrapItem>
+              <Button>Tintura</Button>
+            </WrapItem>
+            <WrapItem>
+              <Button>Manos</Button>
+            </WrapItem>
+            <WrapItem>
+              <Button>Pies</Button>
+            </WrapItem>
+            <WrapItem>
+              <Button>Cortes</Button>
+            </WrapItem>
+          </Wrap>
         </Flex>
 
       </Box>
