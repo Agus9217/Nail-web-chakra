@@ -1,4 +1,4 @@
-import { Box, Button, Flex, Heading, Image, Text, Wrap, WrapItem } from '@chakra-ui/react'
+import { Box, Button, Flex, Heading, Image, Text } from '@chakra-ui/react'
 import heroImg from '../../assets/img/hero-img.jpeg'
 import { FiCornerRightDown } from 'react-icons/fi'
 
@@ -6,12 +6,12 @@ export const Hero = () => {
   return (
     <Flex
       alignItems={ 'center' }
-      h={ '90dvh' }
+      h={{ base: '100%', md: '90dvh' }}
       direction={ { base: 'column', md: 'row' }}
     >
       <Box
         h={ '100%' }
-        w={ '50%' }
+        w={ { base: '90%', md: '50%' } }
       >
         <Flex
           align={ 'center' }
@@ -24,11 +24,12 @@ export const Hero = () => {
             textAlign={ 'center' }
             as={ 'h2' }
             fontWeight={ 'light' }
-            fontSize={ 'clamp(2.3rem, 5vw, 8rem)' }
+            fontSize={ 'clamp(2.5rem, 5vw, 8rem)' }
           >
             Realza tu belleza
           </Heading>
           <Text
+            py={2}
             alignItems={ 'center' }
             display={ 'flex' }
             fontSize={ 'clamp(1.2rem, 2vw, 2rem)' }
@@ -38,26 +39,14 @@ export const Hero = () => {
           >
             Mira nuestro catálogo <FiCornerRightDown />
           </Text>
-          <Wrap spacing={2}>
-            <WrapItem>
-              <Button>Uñas</Button>
-            </WrapItem>
-            <WrapItem>
-              <Button>Peluqueria</Button>
-            </WrapItem>
-            <WrapItem>
-              <Button>Tintura</Button>
-            </WrapItem>
-            <WrapItem>
-              <Button>Manos</Button>
-            </WrapItem>
-            <WrapItem>
-              <Button>Pies</Button>
-            </WrapItem>
-            <WrapItem>
-              <Button>Cortes</Button>
-            </WrapItem>
-          </Wrap>
+          <Flex maxW={'450px'} gap={2} flexWrap={'wrap'} justifyContent={{ base: 'center', md: 'flex-start' }} p={4}>
+            <Button borderRadius={50} variant={'outline'} _hover={{ bg: 'orange.300', color: 'white' }} fontWeight={'thin'}>Uñas</Button>
+            <Button borderRadius={50} variant={'outline'} _hover={{ bg: 'orange.300', color: 'white' }} fontWeight={'thin'}>Peluqueria</Button>
+            <Button borderRadius={50} variant={'outline'} _hover={{ bg: 'orange.300', color: 'white' }} fontWeight={'thin'}>Tintura</Button>
+            <Button borderRadius={50} variant={'outline'} _hover={{ bg: 'orange.300', color: 'white' }} fontWeight={'thin'}>Manos</Button>
+            <Button borderRadius={50} variant={'outline'} _hover={{ bg: 'orange.300', color: 'white' }} fontWeight={'thin'}>Cortes</Button>
+            <Button borderRadius={50} variant={'outline'} _hover={{ bg: 'orange.300', color: 'white' }} fontWeight={'thin'}>Pies</Button>
+          </Flex>
         </Flex>
 
       </Box>
