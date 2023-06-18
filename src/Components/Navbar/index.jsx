@@ -99,7 +99,7 @@ export const Navbar = () => {
                 as={ IconButton }
                 icon={ <HamburgerIcon fontSize={'1.5rem'} /> }
                 color={changeColor}
-                variant={ 'ghost' }
+                variant={ 'unstyled' }
               />
               <MenuList
                 background={'orange.400'}
