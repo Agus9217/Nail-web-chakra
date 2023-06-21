@@ -24,7 +24,7 @@ export const Hero = () => {
             textAlign={ 'center' }
             as={ 'h2' }
             fontWeight={ 'light' }
-            fontSize={ 'clamp(2.5rem, 5vw, 8rem)' }
+            fontSize={ 'clamp(3rem, 5vw, 8rem)' }
           >
             Realza tu belleza
           </Heading>
