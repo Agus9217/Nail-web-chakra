@@ -8,7 +8,7 @@ export const About = () => {
       background={'green.900'}
       borderTopRadius={'50px'}
       py={'3rem'}
-      mt={20}
+      mt={10}
       w={'100%'}
     >
       <Flex
